@@ -1,7 +1,8 @@
 FROM node:20-alpine
 WORKDIR /app
 COPY ../../merrygit-user-service/package*.json ./
-RUN npm install
+RUN npm install  --legacy-peer-deps
 COPY ../../merrygit-user-service/ .
+RUN npm run build
 EXPOSE 5001
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
