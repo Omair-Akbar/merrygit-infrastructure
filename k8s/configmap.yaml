@@ -19,7 +19,7 @@ data:
   PORT_USER: "5000"
   PORT_CHAT: "5002"
   NODE_ENV: "development"
-  REDIS_PORT: "6379"
+  REDIS_PORT: "11304"
 
   # Mail Service
   APP_NAME: "OTP Mail Service"
